@@ -1,0 +1,14 @@
+<h1>
+  Schedule a Play Date
+</h1>
+<%= image_tag @puppy.image %>
+
+<%= form_for [@puppy, @playdate] do |f| %>
+
+    <%= f.datetime_select :time, ampm: true  %>
+
+    <%= f.number_field :attendees %>
+    <%= f.label :number_of_attendees %>
+
+    <%= f.submit 'Schedule' %>
+<% end %>

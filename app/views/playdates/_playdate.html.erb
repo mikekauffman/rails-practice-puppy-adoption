@@ -1,0 +1,7 @@
+<div class="puppy">
+  <%= image_tag playdate.puppy.image %>
+  <%= playdate.time.strftime('%B') %> <%= playdate.time.strftime('%-d') %>
+  at <%= playdate.time.strftime('%l') %>:<%= playdate.time.strftime('%M') %> <%= playdate.time.strftime('%p') %>
+  <br>
+  <%= playdate.attendees %> People Attending
+</div>

@@ -1,4 +1,4 @@
 <div class="puppy">
   <%= image_tag favorite.puppy.image %>
-  <!--< %= link_to "Add Me!", favorite_puppy_path(puppy), method: :post %>-->
+  <%= link_to "Make a Play Date", new_puppy_playdate_path(favorite.puppy) %>
 </div>

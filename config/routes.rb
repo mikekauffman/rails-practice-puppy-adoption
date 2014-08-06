@@ -6,4 +6,9 @@ Rails.application.routes.draw do
 
   get "my_puppy_dashboard" => "dashboard#index", as: :my_puppy_dashboard
   post "favorites/:puppy_id" => "favorites#create", as: :favorite_puppy
+
+  resources :puppies, only: [] do
+    resources :playdates
+  end
+
 end
